@@ -1,0 +1,17 @@
+query GetAllPosts {
+  posts {
+    body
+    category
+    id
+    published
+  }
+}
+
+query getPost($input: ID!) {
+  post(id: $input) {
+    body
+    category
+    id
+    published
+  }
+}

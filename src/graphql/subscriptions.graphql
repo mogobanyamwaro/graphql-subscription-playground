@@ -1,0 +1,7 @@
+# Add the notification subscription to the list of subscriptions
+# for the given notification type.
+
+subscription = NotificationSubscription.new
+subscription.notification_type = notification_type
+subscription.user = user
+subscription.save
